@@ -370,7 +370,7 @@ const Home: React.FC = () => {
                 {isLoading ? (
                   <Skeleton.Input active={isLoading} size="small" />
                 ) : (
-                  `${assignmentScore?.score}%`
+                  `${assignmentScore?.score && assignmentScore?.score}%`
                 )}
               </span>
             </div>
