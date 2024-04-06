@@ -360,9 +360,9 @@ const Home: React.FC = () => {
 
               <span
                 className={`text-xl font-semibold text-green-600 py-2 ${
-                  assignmentScore?.score > 70
+                  assignmentScore?.score && assignmentScore?.score > 70
                     ? "text-green-500"
-                    : assignmentScore?.score > 40
+                    : assignmentScore?.score && assignmentScore?.score > 40
                     ? "text-[#EAB308]"
                     : "text-red-500"
                 }`}
