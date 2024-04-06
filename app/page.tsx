@@ -25,6 +25,7 @@ interface Score {
 }
 
 interface AssignmentScore {
+  id: number;
   full_name: string;
   email: string;
   score: number;
